@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div class="hometown">
+		<select name="" id="province" data-id="130000"></select>
+		<select name="" id="city" data-id="130600"></select>
+		<select name="" id="xian" data-id="130634"></select>
+	</div>
+
+	<script src="jquery.min.js"></script>
+	<script src="jquery.region.js"></script>
+	<script>
+
+		// ['province|', 'city|' , 'xian|']
+		
+		$('.hometown').region({
+			url: './region.json'
+		});
+
+	</script>
+</body>
+</html>
